@@ -1,0 +1,120 @@
+:root{
+    --colorTextos:#7e7e7e;
+}
+*{
+    margin: 0;
+    padding: 0; box-sizing: border-box;
+}
+body{
+    background-color: #c5ad9f;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    display: flex;
+    height:15% ;
+background-color:rgb(243, 230, 218);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    position: fixed;
+    width: 100%; 
+}
+header ul{
+   float:right;
+   margin-right: 20px;
+}
+header ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+header ul li a{
+    color: rgb(53, 45, 41);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight : bold;
+}
+li a.active, li a:hover{
+    background-color: rgb(170, 149, 143);
+}
+#logo{
+    display: flex;
+    height: 100%;
+} 
+ .main{
+    padding-top: 7%;
+}
+section{
+    padding-top: 7%; 
+    display:flex;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    color: rgb(76, 65, 57);
+}
+form{
+  background: #fff;  
+  padding: 40px 0;
+  border-radius: 10px;
+}
+.form{
+    width: 100%;
+    margin:auto;
+}
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+input{
+    background: none;
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+input:focus{
+    outline: none;
+    color: rgb(53, 45, 41);
+}
+label{
+color: var(--colorTextos);
+font-size: 16px;
+position: absolute;
+left: 5px;
+top:10px;
+transition: 0.5s ease-in-out all;
+pointer-events: none;
+}
+input:focus~label{
+    top:-14px;
+    font-size: 12px;
+}
+.warnings{
+    width: 200px;
+    text-align:center ;
+    margin: auto;
+    color: firebrick;
+    padding-top:20px ;
+}
+button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #9a6b50;
+    border: none;
+    display: block;
+    width: 80%;
+    margin:10px auto ;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}

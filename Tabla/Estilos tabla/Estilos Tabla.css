@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e4caff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    top:0;
+    display: flex;
+    height:100px ;
+    background-color:white;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    position: fixed;
+    width: 100%; 
+}
+header ul{
+   float:right;
+   margin-right: 20px;
+}
+header ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+header ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight : bold;
+}
+li a.active, li a:hover{
+    background-color: rgb(183, 116, 242);
+}
+#logo{
+    display: flex;
+    height: 100%;
+} 
+ main{
+    padding-top: 6rem;
+}
+
+tr h2{
+    color: #3d2d23;
+}
+.contenedor{
+    padding-top: 7rem;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.tabla{
+    background-color: white;
+    width: 22%;
+    height: 500px;
+    margin: 1%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px rgb(218, 173, 239);
+     padding: 80px;
+     text-align: center;
+     flex-grow: 1;
+     color:rgb(18, 10, 21);
+}
+.tabla>h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.tabla img{
+    margin-bottom: 35px;
+}
+.tabla>h3{
+    font-size: 30px;
+    margin-bottom: 20px ;
+}
+.tabla>p{
+    display: block;
+    margin-bottom: 20px;
+}
+.boton{
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background-color: rgb(203, 147, 255);
+    text-decoration: none;
+    color:rgb(16, 16, 16);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+.tabla:hover{
+    background-color: #553a75;
+    color: white;
+    transition: 0.1 all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
