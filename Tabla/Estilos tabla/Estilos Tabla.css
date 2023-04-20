@@ -37,7 +37,7 @@ header ul li a{
     font-weight : bold;
 }
 li a.active, li a:hover{
-    background-color: rgb(183, 116, 242);
+    background-color: rgb(242, 221, 116);
 }
 #logo{
     display: flex;
